@@ -1,7 +1,6 @@
 import React from "react"
 import Card from "./atoms/Card"
-
-import data from "../yourdata"
+import data from "../../data"
 
 const Work = () => {
   return (
