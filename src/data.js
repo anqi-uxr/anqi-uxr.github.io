@@ -1,5 +1,6 @@
 // Social Icons
 import linkedinIcon from "./images/linkedin.svg"
+import emailIcon from "./images/email.svg"
 
 export default {
   //   Header Details ---------------------
@@ -85,6 +86,12 @@ export default {
 
   //   Contact Section --------------
   social: [
+    // Email
+    {
+      img: emailIcon,
+      url: "mailto:anqi.li.uxr@gmail.com",
+    },
+    // LinkedIn
     {
       img: linkedinIcon,
       url: "https://www.linkedin.com/in/anqi-li-uxr/",
