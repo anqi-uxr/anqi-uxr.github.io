@@ -19,27 +19,25 @@
     }
   }
 
-  h2 {
+  .email-link {
+    color: black;
     font-size: 1.5rem;
-    overflow: hidden;
     @include media(">=phone", "<lgphone") {
-      display: none;
-    }
-    @include media(">=lgphone", "<tablet") {
       font-size: 14px;
     }
+    @include media(">=lgphone", "<tablet") {
+      font-size: 16px;
+    }
     @include media(">=tablet", "<desktop") {
-      font-size: 1.2rem;
+      font-size: 18px;
     }
   }
-  .email-link {
-    font-size: 1.5rem;
-    color: black;
-  }
-  span {
-    margin-top: 10px;
-  }
-  icon {
-    color: red;
+
+  .social-icons {
+    margin-top: 20px;
+    img {
+      height: 2rem;
+      margin: 10px;
+    }
   }
 }
