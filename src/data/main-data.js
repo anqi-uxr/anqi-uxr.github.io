@@ -1,6 +1,6 @@
 // Social Icons
-import linkedinIcon from "./images/linkedin.svg"
-import emailIcon from "./images/email.svg"
+import linkedinIcon from "../images/linkedin.svg"
+import emailIcon from "../images/email.svg"
 
 export default {
   //   Header Details ---------------------

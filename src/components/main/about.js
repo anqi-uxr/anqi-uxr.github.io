@@ -1,5 +1,5 @@
 import React from "react"
-import data from "../../data"
+import main_data from "../../data/main-data"
 
 const About = () => {
   return (
@@ -9,17 +9,17 @@ const About = () => {
           <div className="content">
             <h1>About Me</h1>
             <p>
-              {data.aboutParaOne}
+              {main_data.aboutParaOne}
               <br></br>
               <br></br>
-              {data.aboutParaTwo}
+              {main_data.aboutParaTwo}
               <br></br>
               <br></br>
-              {data.aboutParaThree}
+              {main_data.aboutParaThree}
             </p>
           </div>
           <div className="image-wrapper">
-            <img src={data.aboutImage} alt="about"></img>
+            <img src={main_data.aboutImage} alt="about"></img>
           </div>
         </div>
       </div>

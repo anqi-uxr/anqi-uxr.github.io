@@ -1,5 +1,5 @@
 import React from "react"
-import data from "../../data"
+import main_data from "../../data/main-data"
 
 const Footer = () => {
   return (
@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="container">
         <div className="footer-container">
           <h1>Contact</h1>
-          <a className="email-link" href={`mailto:${data.contactEmail}`}>
-            {data.contactEmail}
+          <a className="email-link" href={`mailto:${main_data.contactEmail}`}>
+            {main_data.contactEmail}
           </a>
           <div className="social-icons">
-            {data.social.map(socialLink => (
+            {main_data.social.map(socialLink => (
               <a
                 href={socialLink.url}
                 target="_blank"

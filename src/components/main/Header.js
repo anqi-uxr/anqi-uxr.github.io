@@ -1,5 +1,5 @@
 import React from "react"
-import data from "../../data"
+import main_data from "../../data/main-data"
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container">
         <div className="header-wrapper">
           <h1>Anqi Li</h1>
-          {data.headerParagraph.map(function (val) {
+          {main_data.headerParagraph.map(function (val) {
             return <p>{val}</p>;
           })}
         </div>
