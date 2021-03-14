@@ -1,5 +1,5 @@
 import React from "react"
-import "../../../styles/two-column.scss"
+import "../../styles/two-column.scss"
 
 const TwoColumn = ({ children }) => {
   return (
@@ -11,4 +11,5 @@ const TwoColumn = ({ children }) => {
     </div>
   )
 }
+
 export default TwoColumn

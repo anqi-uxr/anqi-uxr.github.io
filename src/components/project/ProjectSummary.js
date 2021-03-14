@@ -1,31 +1,39 @@
 import React from "react"
 import "../../styles/project-summary.scss"
+import TwoColumn from "../common/TwoColumn"
 
-const ProjectHeader = ({ summary, methods, role, timeframe, stakeholders }) => {
+const ProjectSummary = ({ summary }) => {
   return (
     <div className="summary-container">
-      <div class="row">
-        <div class="column">
+
+      <TwoColumn>
+
+        <div>
           <h1>Project Summary</h1>
           <div className="summary-pragraphs">
-            {summary.map(paragraph => (
+            {summary.summary.map(paragraph => (
               <p>{paragraph}</p>
             ))}
           </div>
         </div>
-        <div class="column">
+
+        <div>
           <h2>Methods</h2>
-          <p>{methods}</p>
+          <p>{summary.methods}</p>
+
           <h2>My Role</h2>
-          <p>{role}</p>
+          <p>{summary.role}</p>
+
           <h2>TimeFrame</h2>
-          <p>{timeframe}</p>
+          <p>{summary.timeframe}</p>
+
           <h2>Stakeholders</h2>
-          <p>{stakeholders}</p>
+          <p>{summary.stakeholders}</p>
         </div>
-      </div>
+
+      </TwoColumn>
     </div>
   )
 }
 
-export default ProjectHeader
+export default ProjectSummary

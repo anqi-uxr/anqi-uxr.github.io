@@ -1,13 +1,13 @@
 import React from "react"
 import "../../styles/project-header.scss"
 
-const ProjectHeader = ({ title, subtitle, background }) => {
+const ProjectHeader = ({ header }) => {
   return (
     <div className="project-header">
-      <img src={background}></img>
+      <img src={header.background}></img>
       <div className="title-section">
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
+        <h1>{header.title}</h1>
+        <h2>{header.subtitle}</h2>
       </div>
     </div>
   )
