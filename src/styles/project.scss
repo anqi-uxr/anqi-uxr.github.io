@@ -1,25 +1,34 @@
+@import "./include-media.scss";
+
 .project {
-  .project-details {
-    width: 55%;
-    margin-right: auto;
-    margin-left: auto;
-  
-    .section-block {
-      padding-top: 2vh;
-    }
-  
-    h1 {
-      color: #eb8100;
-      text-align: center;
-    }
-  
-    h2 {
-      font-size: x-large;
-    }
-  
-    h3 {
-      font-style: italic;
-      font-weight: normal;
+  .project-content {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .project-details {
+      @include media(">tablet") {
+        width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+      }
+    
+      .section-block {
+        padding-top: 2vh;
+      }
+    
+      h1 {
+        color: #eb8100;
+        text-align: center;
+      }
+    
+      h2 {
+        font-size: x-large;
+      }
+    
+      h3 {
+        font-style: italic;
+        font-weight: normal;
+      }
     }
   }
 }
