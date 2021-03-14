@@ -1,0 +1,27 @@
+.summary-container {
+  width: 90%;
+  margin-top: 2vh;
+  margin-right: auto;
+  margin-left: auto;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .row:after {
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+}
