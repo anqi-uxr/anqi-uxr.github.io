@@ -2,25 +2,50 @@ import React from "react"
 
 import SEO from "../components/main/seo"
 import ProjectHeader from "../components/project/ProjectHeader"
-import ProjectSummary from "../components/project/ProjectSummary"
+import hivetec from "../images/hivetec.jpg"
+import TwoColumn from "../components/main/atoms/TwoColumn"
 
-import hivetec_data from "../data/hivetec-data"
+import "../styles/project.scss"
 
 const HiveTec = () => (
   <>
-    <SEO title={hivetec_data.siteTitle} />
+    <SEO title={"IoT for Agriculture"} />
+
     <ProjectHeader
-      title={hivetec_data.header.title}
-      subtitle={hivetec_data.header.subtitle}
-      background={hivetec_data.header.background}>
+      title={"Remote Beehive Monitoring Technology"}
+      subtitle={"Care for the BEEs & promote species diversity"}
+      background={hivetec}>
     </ProjectHeader>
-    <ProjectSummary
-      summary={hivetec_data.summary.summary}
-      methods={hivetec_data.summary.methods}
-      role={hivetec_data.summary.role}
-      timeframe={hivetec_data.summary.timeframe}
-      stakeholders={hivetec_data.summary.stakeholders}>
-    </ProjectSummary>
+
+    <TwoColumn>
+      <div>
+        <h1>Project Summary</h1>
+        <p>
+          HiveTec is an early-stage start-up focusing on using technology as a solution to agricultural problems. HiveTec is developing an IoT-based remote monitoring tool for beehives to combat high honeybee colony loss.
+        </p>
+        <p>
+          "As the primary UX researcher, I conducted a two-month foundational research project to understand U.S. beekeepers’ working processes, challenges, and needs with regards to monitoring beehives and keep bees healthy. As a result, I defined product features for the first-generation MVP by leveraging insights from in-depth interviews and an online survey with hobbyist beekeepers across the U.S.",
+        </p>
+      </div>
+      <div>
+        <h2>Methods</h2>
+        <p>
+          Foundational Research / Semi-structured Interviews / Survey
+        </p>
+        <h2>My Role</h2>
+        <p>
+          Primary UX Researcher: research planning, execution, and guiding the definition of the first-generation MVP
+        </p>
+        <h2>TimeFrame</h2>
+        <p>
+          Dec 2020 - Jan 2021 (Two Months)
+        </p>
+        <h2>Stakeholders</h2>
+        <p>
+          CEO, UX team
+        </p>
+      </div>
+    </TwoColumn>
   </>
 )
 
