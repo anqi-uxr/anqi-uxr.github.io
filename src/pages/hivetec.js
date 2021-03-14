@@ -3,7 +3,7 @@ import React from "react"
 import SEO from "../components/main/seo"
 import ProjectHeader from "../components/project/ProjectHeader"
 import hivetec from "../images/hivetec.jpg"
-import TwoColumn from "../components/main/atoms/TwoColumn"
+import TwoColumn from "../components/common/TwoColumn"
 
 import "../styles/project.scss"
 
