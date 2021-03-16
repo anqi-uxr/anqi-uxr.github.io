@@ -1,5 +1,5 @@
 import React from "react"
-import Card from "../common/Card"
+import ProjectCard from "../common/ProjectCard"
 import main_data from "../../data/main-data"
 
 const Work = () => {
@@ -10,13 +10,13 @@ const Work = () => {
           <h1>Work</h1>
           <div className="grid">
             {main_data.projects.map(project => (
-              <Card
+              <ProjectCard
                 key={project.id}
                 heading={project.title}
                 paragraph={project.para}
                 imgUrl={project.imageSrc}
                 projectLink={project.url}
-              ></Card>
+              />
             ))}
           </div>
         </div>
