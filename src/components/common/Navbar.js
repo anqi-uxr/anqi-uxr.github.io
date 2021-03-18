@@ -20,6 +20,8 @@ const Navbar = ({ data }) => {
 function buttonFromData(data) {
   if (data.type === "scroll") {
     return <button onClick={() => scrollTo(data.link)}>{data.name}</button>
+  } else if (data.type === "link") {
+    return <button onClick={() => window.open(data.link)}>{data.name}</button>
   }
   return null;
 }

@@ -10,6 +10,11 @@ export default {
     title: "Portfolio.",
     buttons: [
       {
+        "type": "link",
+        "name": "About",
+        "link": "/about",
+      },
+      {
         "type": "scroll",
         "name": "Projects",
         "link": "#projects",
