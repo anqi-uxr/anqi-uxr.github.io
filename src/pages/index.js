@@ -1,18 +1,23 @@
 import React from "react"
 
-import Layout from "../components/layout"
 import SEO from "../components/main/seo"
 import Header from "../components/main/Header"
 import Projects from "../components/main/Projects"
 import Footer from "../components/main/Footer"
+import Navbar from "../components/common/Navbar"
+
+import data from "../data/main-data"
+
+import "../styles/mains.scss"
 
 const IndexPage = () => (
-  <Layout>
+  <>
+    <Navbar data={data.navbarData}></Navbar>
     <SEO title="Anqi's Portfolio" />
     <Header></Header>
     <Projects></Projects>
     <Footer></Footer>
-  </Layout>
+  </>
 )
 
 export default IndexPage

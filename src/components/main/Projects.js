@@ -1,6 +1,6 @@
 import React from "react"
 import ProjectCard from "../common/ProjectCard"
-import main_data from "../../data/main-data"
+import data from "../../data/main-data"
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="work-wrapper">
           <h1>Projects</h1>
           <div className="grid">
-            {main_data.projects.map(project => (
+            {data.projects.map(project => (
               <ProjectCard
                 key={project.id}
                 heading={project.title}

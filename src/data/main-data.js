@@ -5,6 +5,24 @@ import emailIcon from "../images/email.svg"
 import hivetecThumbnail from "../images/hivetec-thumbnail.jpg"
 
 export default {
+  //   Navbar Details ---------------------
+  navbarData: {
+    title: "Portfolio.",
+    buttons: [
+      {
+        "type": "scroll",
+        "name": "Projects",
+        "link": "#projects",
+      },
+      {
+        "type": "scroll",
+        "name": "Contact",
+        "link": "#contact",
+      },
+    ],
+  },
+  //   End Navbar Details ---------------------
+
   //   Header Details ---------------------
   name: "Anqi",
   headerParagraph: [
