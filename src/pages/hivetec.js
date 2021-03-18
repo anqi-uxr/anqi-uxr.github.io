@@ -1,6 +1,6 @@
 import React from "react"
 
-import SEO from "../components/main/seo"
+import SEO from "../components/common/seo"
 import ProjectHeader from "../components/project/ProjectHeader"
 import ProjectSummary from "../components/project/ProjectSummary"
 
