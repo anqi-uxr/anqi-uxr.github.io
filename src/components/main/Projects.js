@@ -2,12 +2,12 @@ import React from "react"
 import ProjectCard from "../common/ProjectCard"
 import main_data from "../../data/main-data"
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div className="section" id="work">
+    <div className="section" id="projects">
       <div className="container">
         <div className="work-wrapper">
-          <h1>Work</h1>
+          <h1>Projects</h1>
           <div className="grid">
             {main_data.projects.map(project => (
               <ProjectCard
@@ -25,4 +25,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Projects
