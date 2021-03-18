@@ -9,6 +9,7 @@ const ProjectHeader = ({ header }) => {
         <h1>{header.title}</h1>
         <h2>{header.subtitle}</h2>
       </div>
+      <a href="/">Home</a>
     </div>
   )
 }

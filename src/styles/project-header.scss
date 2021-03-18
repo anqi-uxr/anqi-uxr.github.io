@@ -5,6 +5,32 @@
   text-align: center;
   color: white;
 
+  a {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    top: 50px;
+    left: 70px;
+
+    @include media(">=phone", "<lgphone") {
+      top: 20px;
+      left: 20px;
+      font-size: 14px;
+    }
+    @include media(">=lgphone", "<tablet") {
+      top: 20px;
+      left: 20px;
+      font-size: 16px;
+    }
+    @include media(">=tablet", "<desktop") {
+      top: 20px;
+      left: 20px;
+      font-size: 18px;
+    }
+  }
+
   .title-section {
     position: absolute;
     top: 50%;
