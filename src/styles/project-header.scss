@@ -13,21 +13,33 @@
     text-decoration: none;
     top: 50px;
     left: 70px;
+    &:hover {
+      font-size: 22px;
+    }
 
     @include media(">=phone", "<lgphone") {
       top: 20px;
       left: 20px;
       font-size: 14px;
+      &:hover {
+        font-size: 16px;
+      }
     }
     @include media(">=lgphone", "<tablet") {
       top: 20px;
       left: 20px;
       font-size: 16px;
+      &:hover {
+        font-size: 18px;
+      }
     }
     @include media(">=tablet", "<desktop") {
       top: 20px;
       left: 20px;
       font-size: 18px;
+      &:hover {
+        font-size: 20px;
+      }
     }
   }
 
