@@ -1,0 +1,28 @@
+@import "./include-media.scss";
+
+.about-container {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .about-picture {
+    align-items: center;
+    justify-content: center;
+
+    img {
+      padding-right: 20%;
+      width: 100%;
+
+      @include media("<desktop") {
+        padding-right: 0%;
+      }
+    }
+  }
+
+  .about-content {
+    padding-top: 10%;
+    h1 {
+      color: #eb8100;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+import aboutPicture from "../images/about-picture.jpeg"
+
 export default {
   //   Navbar Details ---------------------
   navbarData: {
@@ -10,5 +12,7 @@ export default {
       },
     ],
   },
+
+  picture: aboutPicture,
   //   End Navbar Details ---------------------
 }
