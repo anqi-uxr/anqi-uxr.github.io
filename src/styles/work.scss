@@ -23,7 +23,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 24px;
     @include media("<desktop") {
       grid-template-columns: 1fr;
     }

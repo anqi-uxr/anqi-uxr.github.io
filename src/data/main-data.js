@@ -2,7 +2,9 @@
 import linkedinIcon from "../images/linkedin.svg"
 import emailIcon from "../images/email.svg"
 
+// Project Thumbnails
 import hivetecThumbnail from "../images/hivetec-thumbnail.jpg"
+import tenzingThumbnail from "../images/tenzing-thumbnail.png"
 
 export default {
   //   Navbar Details ---------------------
@@ -40,6 +42,8 @@ export default {
 
   // Work Section ------------------------
   projects: [
+  
+    // HiveTec
     {
       id: 1,
       title: "IoT for Agriculture: Remote Beehive Monitoring Tech",
@@ -47,6 +51,16 @@ export default {
         "Foundational Research for a Student Startup",
       imageSrc: hivetecThumbnail,
       url: "hivetec",
+    },
+
+    // Tenzing
+    {
+      id: 2,
+      title: "Tenzing: Web-App for Documenting Contribution in Academic Research",
+      para:
+        "UX Research Internship @ ChaiOne, Inc.",
+      imageSrc: tenzingThumbnail,
+      url: "chaione",
     },
   ],
   // End Work Section -----------------------
