@@ -5,6 +5,7 @@ import ProjectHeader from "../components/project/ProjectHeader"
 import ProjectSummary from "../components/project/ProjectSummary"
 
 import hivetec_data from "../data/hivetec-data"
+import hivetec1 from "../images/hivetec-1.jpeg"
 
 import "../styles/project.scss"
 
@@ -114,6 +115,11 @@ const HiveTec = () => (
           <p>
             Prior to conducting the interviews, I spent one-week conducting secondary research on beekeeping and completed an online course on Beekeeping 101 provided by PennState Extension. The course prepared me with the fundamental knowledge and I was ready to talk to real beekeepers in their language.
           </p>
+
+          <div class="img-container">
+            <img src={hivetec1} />
+            <h4>Figure 1: Prioritization Matrix</h4>
+          </div>
 
           <h2>Analysis & Insights</h2>
           <p>

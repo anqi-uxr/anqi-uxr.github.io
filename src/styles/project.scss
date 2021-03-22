@@ -31,4 +31,19 @@
       }
     }
   }
+
+  .img-container {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    h4 {
+      font-size: small;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 }
