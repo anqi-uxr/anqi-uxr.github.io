@@ -8,13 +8,14 @@ import hivetec_data from "../data/hivetec-data"
 import hivetec1 from "../images/hivetec-1.jpeg"
 
 import "../styles/project.scss"
+import "../styles/hivetec.scss"
 
 const HiveTec = () => (
   <div className="project">
     <SEO title={hivetec_data.siteTitle} />
     <ProjectHeader header={hivetec_data.header} />
 
-    <div className="project-content">
+    <div className="project-content hivetec">
       <ProjectSummary summary={hivetec_data.summary} />
 
       <div className="project-details">

@@ -1,0 +1,24 @@
+@import "./include-media.scss";
+
+.three-column-container {
+  margin-right: auto;
+  margin-left: auto;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+
+    @include media("<desktop") {
+      width: 100%;
+    }
+  }
+
+  .row:after {
+    display: table;
+    clear: both;
+  }
+}
