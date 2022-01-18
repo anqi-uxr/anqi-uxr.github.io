@@ -3,8 +3,6 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const queries = require('./src/utils/algolia')
-
 const feeds = [
   {
     serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -159,7 +157,7 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-i18n',
     options: {
-      langKeyDefault: 'pt-br',
+      langKeyDefault: 'en-us',
       useLangKeyLayout: false
     }
   },
@@ -184,21 +182,6 @@ const plugins = [
     }
   },
 ]
-
-if (process.env.CONTEXT === 'production') {
-  const algolia = {
-    resolve: `gatsby-plugin-algolia-search`,
-    options: {
-      appId: process.env.GATSBY_ALGOLIA_APP_ID,
-      apiKey: process.env.ALGOLIA_ADMIN_KEY,
-      queries,
-      chunkSize: 10000, // default: 1000
-      enablePartialUpdates: true
-    }
-  }
-
-  plugins.push(algolia)
-}
 
 module.exports = {
   siteMetadata: {

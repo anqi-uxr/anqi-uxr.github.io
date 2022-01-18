@@ -29,7 +29,7 @@ const LabPage = () => {
 
   return (
     <Layout>
-      <SEO title="Experience" lang="en" description="My past experience" />
+      <SEO title="Experience" />
       <Lab content={data.allLabJson.edges} />
     </Layout>
   )
