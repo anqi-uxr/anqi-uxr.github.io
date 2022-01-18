@@ -1,236 +1,137 @@
 ---
-title: 'React, Angular ou Vue - Qual Framework JavaScript escolheria hoje? 🤔'
+title: 'Remote Beehive Monitor'
 date: 2021-06-21 00:00:01
 description:
   'Os Frameworks JavaScript mais relevantes do mercado já tem alguns anos de
   vida e hoje podemos dizer que todos eles são muito bons e passaram com
   tranquilidade no filtro do tempo.'
-image: /assets/2021-06-21-cover.jpg
+image: /assets/hivetec.jpg
 tags: ['stack', 'framework', 'javascript']
 ---
 
-Esse texto é uma versão em texto do vídeo: <strong>REACT, VUE ou ANGULAR - Qual
-framework JavaScript escolheria hoje</strong>
-[que publiquei no meu canal no Youtube](https://youtube.com/FelipeFialhoDev).
+## Project Summary
 
-Vale a pena assistir! 😊
+HiveTec is an early-stage start-up focusing on using technology as a solution to agricultural problems. HiveTec is developing an IoT-based remote monitoring tool for beehives to combat high honeybee colony loss.
 
-<iframe width="650" height="400" src="https://www.youtube.com/embed/L78ENSEHXLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+As the primary UX researcher, I conducted a two-month foundational research project to understand U.S. beekeepers’ working processes, challenges, and needs with regards to monitoring beehives and keep bees healthy. As a result, I defined product features for the first-generation MVP by leveraging insights from in-depth interviews and an online survey with hobbyist beekeepers across the U.S.
 
----
+### Methods
 
-## Introdução
+Foundational Research / Semi-structured Interviews / Survey
 
-Essa pergunta foi feita pelo Pablo Ferreira pelo LinkedIn e eu não vou fugir
-dela... ele perguntou na lata:
+### My Role
 
-> React ou Vue?
+Primary UX Researcher: research planning, execution, and guiding the definition of the first-generation MVP
 
-E pra eu me justificar 😋
+### Time Frame
 
-![Pergunta no LinkedIn](assets/2021-06-21-pergunta.png)
+Dec 2020 - Jan 2021 (Two Months)
 
-Eu poderia facilmente responder essa pergunta dizendo que depende do contexto e
-blablabla, mas não vou fazer isso embora de fato essa seja a resposta mais
-sensata 😅
+### Stakeholders
 
-## Frameworks (ou libs) JavaScript
+CEO, UX/Product team
 
-Tive a sorte de trabalhar com os 3 Frameworks mais populares do mercado, ou
-seja, trabalhei com Angular, Vue e React (e até com um pouquinho de Svelte).
 
-Com o passar do tempo eles foram ficando cada vez mais parecidos com relação a
-coisas como performance ou mesmo as funcionalidades que eles trazem.
+## 1. The Problem
 
-Acredito que as maiores diferenças hoje em dia estão na forma de escrever o
-código, que muda principalmente do React com relação ao Angular e Vue, e pelo
-fato do React **não ser um Framework** e sim uma lib.
+Honeybees are more than just honey. They are critical pollinators to one in every three bites of food we eat and contribute annually $30 billion to U.S. crop production alone. However, beekeepers in the U.S. lost an estimated 43.7% of the colonies in 2019 - 2020 (Bee Informed Partnership).
 
-https://twitter.com/felipefialho_/status/1313922039204306944
+HiveTec is developing an IoT beehive monitoring equipment that allows beekeepers to monitor beehives remotely on an APP, provides live updates of beehives’ health conditions, and assists beekeepers in preventing potential beehive distress and colony loss.
 
-Dessas 3 opções prefiro a forma de escrever código e resolução de paradigmas do
-React porque é a mais próxima do JavaScript e considero mais legível além de não
-precisar aprender tantas coisas quanto na forma de escrever componentes
-especialmente quando se trata do Angular, por exemplo.
+I joined the team in December 2020. The team was in the process of building the first-generation MVP. My primary responsibility was to define specific product requirements and priorities for the MVP. My stakeholders were the CEO and the product UX team.
 
-Mas ao mesmo tempo tem a parte de arquitetura e aqui é onde tenho algumas
-ressalvas com relação ao React.
 
-### Svelte
+## 2. Research Objectives
 
-Mas antes quero dizer que temos outros Frameworks de JavaScript bem
-interessantes no mercado.
+**The Problem**
 
-Entre eles o Svelte que é um dos que tem a abordagem mais diferente atualmente,
-já que embora seja um Framework em tempo de desenvolvimento, ele _transpila_
-código em JavaScript puro após o build, se aproveitando ao máximo das
-funcionalidades mais recentes do EcmaScript, o que faz com que ele seja
-extremamente rápido e muito próximo de JavaScript _vanilla_.
+Through a few stakeholder interviews with the CEO and the UX team, I discovered that the major requests are two-fold. On the business side, the CEO wanted to better understand our target users (hobbyist beekeepers) and what motivates a beekeeper to purchase a remote monitoring device. On the product side, the UX team would like to know what features should be on the APP and which ones should be prioritized.
 
-Mas mesmo assim, apesar do Svelte já ter uns aninhos de estrada, não
-consideraria ele pra um cenário de ser _core_ no produto principal de uma
-empresa por exemplo.
+**Research Questions**
 
-Principalmente levando em consideração o fato dele ter uma comunidade muito
-menor, menos opções de libs complementares e com certeza também daria muito mais
-trabalho para achar profissionais no mercado interessados em trabalhar com ele.
+I broke the stakeholder's needs into specific research questions to guide the research process. I categorized the research questions into three categories.
 
-https://twitter.com/felipefialho_/status/1301943110256164867
+_The Who_
 
-### React
+- What are the characteristics of our target users (hobbyist beekeepers)?
+- What differentiates hobbyist beekeepers from commercial beekeepers? What motivates them to become hobbyist beekeepers?
 
-Voltando a falar dos 3 Frameworks principais que temos atualmente, como disse
-antes React não é um Framework e sim uma lib, então ele dá liberdade total pra
-que as próprias pessoas que vão atuar no projeto escolham quais outras libs vão
-utilizar e qual arquitetura o projeto vai ter.
+_The Process and User Needs_
 
-Apesar de parecer positivo, e realmente isso seja em alguns cenários, é
-justamente isso que sempre me fez ter um pé atrás em escolher React em
-determinados projetos.
+- How do hobbyist beekeepers typically monitor their beehives?
+- What pieces of information do hobbyist beekeepers monitor and rely on to keep their bee colonies alive and healthy? How do they use those pieces of information?
 
-São muitas decisões para tomar, muitas formas diferentes de fazer a mesma coisa
-e muitas dessas decisões são subjetiva e muitas vezes baseadas em gostos
-pessoais e não costumo gostar muito quando decisões são tomadas baseadas em
-gostos pessoais e de forma subjetiva.
+_The Technology_
 
-> Não costumo gostar muito quando decisões são tomadas baseadas em gostos
-> pessoais e de forma subjetiva.
+- What are hobbyist beekeepers’ perspectives on using technology as an aid in beekeeping and why?
 
-Isso pode ser ruim, porque conforme as pessoas que tomaram essas decisões
-iniciais vão saindo do projeto, vai abrir margem grandes alterações na
-arquitetura e na estrutura do código, que muitas vezes também vão ser baseadas
-em gostos pessoais, sejam colocadas em prática.
 
-Além disso nem sempre o projeto vai contar com uma documentação robusta
-explicando detalhadamente as abordagens e padrões que foram utilizadas e quais
-foram as motivações para as escolhas delas.
+## 3. The Process
 
-Por isso é bem comum que até mesmo dentro de uma mesma empresa, a arquitetura de
-projetos que utilizam React sejam bem diferentes entre si, mesmo que sejam
-projetos com escopos muito parecidos.
+### Research Foundation
 
-### Angular e Vue
+Prior to planning the details, I spent one-week conducting secondary research on beekeeping and completed an online course on Beekeeping 101 provided by PennState Extension. The course prepared me with the fundamental knowledge and I was ready to talk to real beekeepers in their language.
 
-https://twitter.com/felipefialho_/status/1172513256986087424
+### Planning
 
-Já Angular possui um escopo muito mais fechado, com boa parte das definições
-sendo mais limitadas e não sendo muito recomendadas de se alterar.
+I selected in-depth interviews and an online survey as my methodologies to answer the research questions above. 
 
-Isso garante que os projetos sigam padrões e arquiteturas mais parecidas entre
-si, além disso possui um monte de funcionalidades que auxiliam durante o
-desenvolvimento.
+I selected in-depth interviews as my primary approach to understanding the hobbyist beekeepers. The reasons for my decisions were:
 
-Minha experiencia com Angular foi extremamente positiva, trabalhei mais de dois
-anos (quase três na verdade) com esse Framework e além da parte de arquitetura e
-padrões que já elogiei antes, também tem o TypeScript muito bem integrado, o que
-ajuda demais na escalabilidade de projetos (quem usa TypeScript em projetos
-grandes sabe do que estou falando).
+- Interviews could provide an in-depth and empathic understanding of the beekeeper’s experiences, perceptions, and most importantly their motivations
+- The study had to be remote due to the ongoing COVID-19 pandemic, field studies were not available. Remote interviews were as effective as in-person interviews
+- Remote diary studies or remote observational studies weren’t realistic given the season (beekeepers don’t inspect their beehives in the winter). Interviews would be the best way to learn about beekeepers’ working processes
+- Interviews were easy to recruit for and administer given a limited budget and a short time frame.
 
-Enquanto isso Vue faz um meio termo muito interessante entre o React e o
-Angular, dando sugestões de como devemos seguir com relação a padrões de código
-e arquitetura mas dando bastante flexibilidade pra alterar caso a gente queira
+I chose an online survey as my secondary method to collect quantifiable data on the demographic information of hobbyist beekeepers and attributes of their apiary (the place beehives are kept).
 
-Além do Vue também ter várias funcionalidades acopladas que podemos utilizar
-caso faça sentido dentro de determinado projeto.
+### Recruitment Strategy
 
-### Os Frameworks de React - Next.js e Gatsby
+Study interviewees were recruited by directly contacting local bee clubs across the U.S. To ensure the sample was representative and comprehensive, I selected 5 states, covering all 5 agricultural beekeeping zones across the U.S. States that have a large number of honeybee colonies and hobbyist beekeepers populations were selected.
 
-https://twitter.com/felipefialho_/status/1322170844790087682
+The online survey was distributed through local bee clubs after relationships with bee club members were established.
 
-Mas até aqui estou falando de React, Angular e Vue em suas versões "puras", tudo
-isso mudou quando Frameworks baseados em React surgiram e então dois deles se
-destacaram mais:
+### Results & Analysis
 
-- O Gatsby
-  ([conto nesse post como foi a experiência de criar a versão atual do meu site usando o Gatsby](/blog/como-foi-desenvolver-meu-novo-blog-usando-o-gatsbyjs/))
-- E o Next.js
+**some details were omitted due to NDA agreements
 
-E é justamente o Next.js que pra mim levou o ecossistema de React pra outro
-patamar.
+_Interviews_
 
-Estabelecendo padrões nos projetos, definindo arquitetura, trazendo um monte de
-funcionalidades extremamente úteis, conta com uma documentação maravilhosa,
-possui Server Side Render e Static Site Generator nativos que resolve vários
-problemas de SEO, tem ótimos indices de performance, conta com uma comunidade
-bastante ativa, possui atualizações frequentes e é desenvolvido por uma empresa
-cada vez mais maior e confiável que é a Vercel.
+I interviewed 27 beekeepers through Zoom in 2 weeks. After data was collected, I aggregated all the data points onto a Miro board. I sorted and clustered similar data using affinity diagrams and identified themes of user needs. I used a prioritization matrix with two axes (value to user and effort by organization) to help prioritize user needs for the MVP. 
 
-Tudo isso se aproveitando de toda a confiabilidade, estabilidade e a forma de
-desenvolver componentes do React que já elogiei anteriormente.
+_Survey_
 
-https://twitter.com/felipefialho_/status/1359128693898153988
+I received 115 valid responses in 1 week. I used Excel to clean the survey data. used R as the primary analysis tool for the survey.
 
-Além disso tanto o Gatsby quanto o Next.js apresentam uma dev experience
-sensacional e quem trabalha com produtos sabe a diferente que isso faz no nosso
-dia a adia.
 
-Apesar de o Vue também contar com o Nuxt.js que é uma espeecie de Next.js pro
-Vue e dele também ser um Framework com muitas funcionalidades e bastante
-interessante, o React com o Next.js leva mais uma vantagem que faz muita
-diferença:
+### Key Insights
 
-> Existe uma disponibilidade muito maior de profissionais e a adesão desse
-> Framework é muito maior no mercado
+**some details were omitted due to NDA agreements
 
-Isso faz toda diferença porque uma das maiores dificuldades de escalar um
-projeto ou um produto está exatamente na contratação de pessoas e apesar do
-mercado de Vue também ser bem aquecido, React e seu ecossistema ainda tem larga
-vantagem nesse sentido e acho muito improvável que isso mude nos próximos anos.
+I would like to highlight several interesting insights that I found:
 
-## Se apegue aos conceitos, não as tecnologias
+- The Who
+  - Hobbyist beekeepers don’t keep bees for monetary reasons. They keep bees for fun.
+  - Most of them are fascinated by bees as a species. They raise bees to be closer to nature, contribute to the diversity, and always want to learn more about bees
+  - Hobbyist beekeepers tend to be older in age. Over one-third of our survey respondents were over 65 years-old. Over 90% were over 40 years-old.
 
-Importante ressaltar que acho a curva de aprendizado entre os Frameworks
-JavaScript que citei muito tranquila.
+- The Process & User Needs
+  - The actual beehive monitoring processes that hobbyists conduct are not necessarily the best processes in theory (that are taught in class)
+  - There are several critical pieces of information that experienced beekeepers rely on to monitor the well-being of the bees. However, newbee beekeepers might have a hard time mastering and remembering those pieces of information
+  - (insights on user needs are omitted for NDA reasons)
 
-Dificilmente uma pessoa que trabalha com React vai ter dificuldades pra
-trabalhar com Vue (ou Angular) e vice versa, inclusive considero importante que
-pessoas que trabalham com desenvolvimento se apeguem muito menos ao Framework em
-si e muito mais ao conceito que eles trazem e os problemas que eles resolvem,
-afinal de contas frameworks quase sempre são passageiros e vamos trabalhar com
-muitos deles no decorrer da carreira.
+- Perspectives on Tech
+  - Hobbyist beekeepers are interested in purchasing technology as long as the technology provides trustworthy data
+  - Experienced beekeepers see remote monitoring technologies as secondary tools to help them learn more about bees. New beekeepers would like to use remote monitoring technologies as guidance.
 
-> Frameworks quase sempre são passageiros e vamos trabalhar com muitos deles no
-> decorrer da carreira.
 
-Alias falo desse tema no vídeo sobre **O que Front-end Developers precisam
-saber**:
+## 4. Impact
 
-<iframe width="650" height="400" src="https://www.youtube.com/embed/GRStdYGAmrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+**some details were omitted due to NDA agreements
 
-E também cheguei a rascunhar um pouco sobre assunto no vídeo sobre **10 coisas
-que faria se estivesse iniciando minha carreira como desenvolvedor
-(Front-end)**:
+I delivered my research findings through presentations in team meetings. Here was the major impact of my research:
 
-<iframe width="650" height="400" src="https://www.youtube.com/embed/7yar-WWOifI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Mas ao mesmo tempo existe toda uma questão de demanda de mercado e isso pode
-influenciar com que pessoas achem melhor trabalhar e se "especializar" em
-determinados Frameworks ao invés de outros e o interesse em React acaba sendo
-maior nesse momento.
-
-## Respondendo de forma objetiva
-
-Bom, dito tudo isso percebemos que os 3 Frameworks passaram com tranquilidade no
-filtro do tempo ou seja, foram se tornando cada vez mais **confiáveis e
-estáveis** com o passar do tempo.
-
-Mas para finalizar vou responder essa pergunta de forma objetiva:
-
-Em suas versões puras, entre Angular, Vue e React acho o Vue o mais equilibrado
-de todos e seria minha escolha padrão na maioria dos casos.
-
-> Nas versões puras desses frameworks **acho o Vue o mais equilibrado** de todos
-> e seria minha escolha padrão na maioria dos casos
-
-Deixando o Angular como alternativa para projetos que contam com um time
-composto por profissionais Fullstack com mais foco em Back-end ou mesmo em
-sistemas mais corporativos.
-
-Mas considerando o cenário atual, com esses Frameworks de React que surgiram nos
-últimos anos, que como disse antes trouxeram funcionalidades incríveis além da
-consolidação de padrões e arquiteturas super bem definidas, atualmente eu
-provavelmente escolheria React rodando com Next.JS e TypeScript na grande
-maioria dos projetos 😁
-
-> Hoje escolheria **React rodando com Next.JS e TypeScript** na grande maioria
-> dos projetos
+- My research defined product requirements for the first-generation MVP including hardware functionalities, APP features, and use cases
+- I reduced hardware production cost by identifying and prioritizing user needs and eliminating inefficient hardware features
+- I preemptively reduced future user error and improved APP usability by highlighting accessibility as prioritization in product software design considering the age group of our target users
+- I raised awareness of usability within the organization through collaborating directly with the CEO and including the CEO as an observer in the user interviews
