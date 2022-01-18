@@ -211,18 +211,14 @@ if (process.env.CONTEXT === 'production') {
 
 module.exports = {
   siteMetadata: {
-    title: `Felipe Fialho - Front-end Developer`,
-    author: `Felipe Fialho`,
-    position: 'Front-end Developer',
-    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,
-    descriptionEn: `Personal website of a Front End developer passionate about create things and sharing good ideas.`,
-    siteUrl: `https://felipefialho.com/`,
+    title: `Anqi Li - UX Researcher`,
+    author: `Anqi Li`,
+    position: 'UX Researcher',
+    description: `Anqi's portfolio website.`,
+    descriptionEn: `Anqi's portfolio website.`,
+    siteUrl: `https://anqi-uxr.github.io/`,
     social: {
-      twitter: `felipefialho_`,
-      twitterLink: `https://twitter.com/felipefialho_`,
-      linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
-      githubLink: `https://github.com/felipefialho`,
-      youtubeLink: `https://www.youtube.com/c/FelipeFialhoDev`,
+      linkedinLink: `https://www.linkedin.com/in/anqi-li-uxr/`,
     },
   },
   plugins

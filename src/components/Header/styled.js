@@ -12,7 +12,6 @@ export const Header = styled.header.attrs({
   left: 0;
   position: fixed;
   right: 0;
-  text-transform: lowercase;
   top: 0;
   transition: background-color .3s;
   width: 100%;

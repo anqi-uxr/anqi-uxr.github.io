@@ -19,10 +19,7 @@ const Social = () => {
         site {
           siteMetadata {
             social {
-              youtubeLink
-              twitterLink
               linkedinLink
-              githubLink
             }
           }
         }
@@ -32,24 +29,6 @@ const Social = () => {
 
   return (
     <S.Social>
-      <S.SocialItem
-        href={site.siteMetadata.social.youtubeLink}
-        title="Youtube"
-        onClick={() => trackClick('Youtube')}>
-        <S.SocialYoutube />
-      </S.SocialItem>
-      <S.SocialItem
-        href={site.siteMetadata.social.twitterLink}
-        title="Twitter"
-        onClick={() => trackClick('Twitter')}>
-        <S.SocialTwitter />
-      </S.SocialItem>
-      <S.SocialItem
-        href={site.siteMetadata.social.githubLink}
-        title="Github"
-        onClick={() => trackClick('Github')} >
-        <S.SocialGithub />
-      </S.SocialItem>
       <S.SocialItem
         href={site.siteMetadata.social.linkedinLink}
         title="LinkedIn"
