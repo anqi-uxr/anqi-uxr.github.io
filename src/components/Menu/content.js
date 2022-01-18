@@ -8,10 +8,6 @@ const menuLinks = [
     url: '/skills/'
   },
   {
-    label: 'Blog',
-    url: '/blog/'
-  },
-  {
     label: 'Experience',
     url: '/experience/'
   }
