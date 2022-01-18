@@ -36,7 +36,7 @@ const PostHeader = ({
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
-      <S.Author>Felipe Fialho</S.Author>
+      <S.Author>Anqi Li</S.Author>
     </S.PostHeader>
   )
 }
