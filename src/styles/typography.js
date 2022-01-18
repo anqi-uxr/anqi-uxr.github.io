@@ -31,7 +31,7 @@ export const Subtitle1 = css`
 export const Subtitle2 = css`
  & {
   color: var(--secondaryColor);
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: -0.04px;
   line-height: 1.3em;
  }
@@ -54,13 +54,13 @@ export const Heading1 = css`
 export const Heading2 = css`
   & {
     color: var(--primaryColor);
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: -0.04px;
     line-height: 1.5em;
 
     ${media.greaterThan('medium')`
-      font-size: 2.4rem;
+      font-size: 2.0rem;
     `}
   }
 `
