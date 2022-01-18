@@ -22,7 +22,6 @@ const BlogPost = (props) => {
         <div itemScope itemType="http://schema.org/Article">
           <PostHeader
             image={post.frontmatter.image}
-            tags={post.frontmatter.tags}
             date={post.frontmatter.date}
             title={post.frontmatter.title}
             description={post.frontmatter.description}
@@ -50,7 +49,6 @@ export const query = graphql`
         date(locale: "en-us", formatString: "MMMM YYYY")
         description
         title
-        tags
         image {
           id
           publicURL

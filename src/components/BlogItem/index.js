@@ -5,7 +5,6 @@ import ReactGA from 'react-ga'
 import { getActiveTheme } from 'utils/themes'
 import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
-import Tags from 'components/Tags'
 
 import * as S from './styled'
 
@@ -22,7 +21,6 @@ const BlogItem = ({
   date,
   timeToRead,
   title,
-  tags,
   description,
   isMini
 }) => {
@@ -48,9 +46,6 @@ const BlogItem = ({
         {description && (
           <S.Subtitle>{description}</S.Subtitle>
         )}
-        {tags && (
-          <Tags tags={tags} />
-        )}
       </BoxHandler>
     </S.BlogItem>
   )
@@ -61,7 +56,6 @@ BlogItem.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   timeToRead: PropTypes.number,
-  tags: PropTypes.array,
   description: PropTypes.string,
   isMini: PropTypes.bool
 }

@@ -30,7 +30,6 @@ const blogListQuery = graphql`
             date(locale: "en-us", formatString: "MMM[,] YYYY")
             description
             title
-            tags
           },
           timeToRead
         }
@@ -54,7 +53,6 @@ const BlogList = () => {
             date={node.frontmatter.date}
             title={node.frontmatter.title}
             description={node.frontmatter.description}
-            tags={node.frontmatter.tags}
             timeToRead={node.timeToRead}
           />
         ))}

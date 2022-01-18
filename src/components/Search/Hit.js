@@ -12,7 +12,6 @@ const Hit = (props) => {
       date={hit.date}
       title={hit.title}
       description={hit.description}
-      tags={hit.tags}
       timeToRead={hit.timeToRead}
     />
   )

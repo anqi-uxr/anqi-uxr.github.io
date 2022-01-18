@@ -13,7 +13,6 @@ const postQuery = `{
           date(locale: "pt-br", formatString: "DD MMM[,] YYYY")
           description
           title
-          tags
         }
         timeToRead
         excerpt(pruneLength: 5000)
