@@ -40,7 +40,7 @@ const BlogItem = ({
           <DateTime>
             {date}
             {timeToRead && (
-              <span> · Leitura de {timeToRead} min</span>
+              <span> · Time to read: {timeToRead} min</span>
             )}
           </DateTime>
         )}

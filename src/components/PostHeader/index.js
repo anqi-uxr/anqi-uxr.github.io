@@ -8,16 +8,16 @@ import * as R from 'components/Responsive'
 
 import * as S from './styled'
 
-const PostHeader = ({ 
-  image, 
-  tags, 
-  date, 
-  timeToRead, 
-  title, 
-  description 
+const PostHeader = ({
+  image,
+  tags,
+  date,
+  timeToRead,
+  title,
+  description
 }) => {
   return (
-    <S.PostHeader> 
+    <S.PostHeader>
       {image && (
         <R.GreaterThanTablet>
           <div>
@@ -26,14 +26,14 @@ const PostHeader = ({
         </R.GreaterThanTablet>
       )}
       <S.ButtonBack>
-        <ButtonLink rel="prev" to="/blog/">
-          ← Voltar na listagem
+        <ButtonLink rel="prev" to="/experience/">
+          ← Back
         </ButtonLink>
       </S.ButtonBack>
       <DateTime>
         <span itemProp="datePublished">{date}</span>
         {timeToRead && (
-          <span> · Leitura de {timeToRead} min</span>
+          <span> · Time to read: {timeToRead} min</span>
         )}
       </DateTime>
       <S.Title>{title}</S.Title>

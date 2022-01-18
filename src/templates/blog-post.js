@@ -5,16 +5,11 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
-import DisqusWrapper from 'components/DisqusWrapper'
 
 import PostHeader from 'components/PostHeader'
-import PostFooter from 'components/PostFooter'
-import PostNav from 'components/PostNav'
 
 const BlogPost = (props) => {
   const post = props.data.markdownRemark
-  const next = props.pageContext.next
-  const previous = props.pageContext.previous
 
   return (
     <Layout>
@@ -52,7 +47,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
-        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        date(locale: "en-us", formatString: "MMMM YYYY")
         description
         title
         tags
