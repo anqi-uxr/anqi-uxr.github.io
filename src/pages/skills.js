@@ -1,7 +1,4 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-
-import { getActiveTheme } from 'utils/themes'
 
 import Layout from 'components/Layout'
 import Content from 'components/Content'
