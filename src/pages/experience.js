@@ -26,10 +26,10 @@ const labJsonQuery = graphql`
 
 const LabPage = () => {
   const data = useStaticQuery(labJsonQuery)
-  
+
   return (
     <Layout>
-      <SEO title="Lab" lang="en" description="Check here all my open source projects and some experiences about coding" />
+      <SEO title="Experience" lang="en" description="My past experience" />
       <Lab content={data.allLabJson.edges} />
     </Layout>
   )

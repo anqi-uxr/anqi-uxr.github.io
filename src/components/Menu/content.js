@@ -1,15 +1,15 @@
 const menuLinks = [
   {
-    label: 'hi',
-    url: '/hi/'
+    label: 'About',
+    url: '/about/'
   },
   {
-    label: 'blog',
+    label: 'Skills',
     url: '/blog/'
   },
   {
-    label: 'lab',
-    url: '/lab/'
+    label: 'Experience',
+    url: '/experience/'
   }
 ]
 
