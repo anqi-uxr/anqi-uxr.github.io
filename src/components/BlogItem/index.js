@@ -1,20 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactGA from 'react-ga'
 
 import { getActiveTheme } from 'utils/themes'
 import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
 
 import * as S from './styled'
-
-const trackClick = ({ item, label }) => {
-  ReactGA.event({
-    category: 'Blog',
-    action: 'click',
-    label: `${label || 'Blog List'} - Go to ${item}`
-  })
-}
 
 const BlogItem = ({
   slug,
@@ -31,8 +22,7 @@ const BlogItem = ({
       direction="down"
       duration={1}
       title={title}
-      bg={getActiveTheme()}
-      onClick={() => trackClick(title)}>
+      bg={getActiveTheme()}>
       <BoxHandler>
         {date && (
           <DateTime>
