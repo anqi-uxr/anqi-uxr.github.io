@@ -197,16 +197,7 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
-  const analytics = {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
-    }
-  }
-
   plugins.push(algolia)
-  plugins.push(analytics)
 }
 
 module.exports = {
