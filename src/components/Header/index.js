@@ -4,7 +4,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { getActiveTheme } from 'utils/themes'
 
-import Avatar from 'components/Avatar'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
 import ToggleTheme from 'components/ToggleTheme'
@@ -25,7 +24,6 @@ const Header = ({ site: { author } }) => {
             to="/"
             title="Home">
             <S.Brand>
-              {/* <Avatar /> */}
               <R.LessThanSmallMobile>
                 <S.Title>{author}</S.Title>
               </R.LessThanSmallMobile>
