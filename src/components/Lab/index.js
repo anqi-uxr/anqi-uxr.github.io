@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactGA from 'react-ga'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 
@@ -7,14 +6,6 @@ import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
 
 import * as S from './styled'
-
-const trackClickLab = (item) => {
-  ReactGA.event({
-    category: 'Lab',
-    action: 'click',
-    label: `Lab - Going to ${item}`
-  })
-}
 
 const LabImg = ({ imageSrc }) => {
   const { images } = useStaticQuery(
@@ -52,8 +43,7 @@ const Lab = ({ content }) => {
           <S.LabItem
             key={node.id}
             href={node.path}
-            title={node.title}
-            onClick={() => trackClickLab}>
+            title={node.title}>
             <BoxHandler>
               <LabImg imageSrc={node.imageSrc} />
               <DateTime>{node.date}</DateTime>

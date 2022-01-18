@@ -1,20 +1,20 @@
 [
   {
-    "path": "https://github.com/felipefialho/felipefialho.com",
+    "path": "/blog/hivetec/",
     "date": "Dec. 2020 - Jan. 2021",
     "title": "IoT for Agriculture: Remote Beehive Monitoring",
     "description": "Foudational Research for a Student Start-up",
     "imageSrc": "hivetec-thumbnail.jpg"
   },
   {
-    "path": "https://github.com/felipefialho/felipefialho.com",
+    "path": "/blog/tenzing/",
     "date": "Sep. 2020 - Nov. 2021",
     "title": "Tenzing: Web-App for Documenting Contribution in Academic Research",
     "description": "User Research Internship @ ChaiOne, Inc.",
     "imageSrc": "tenzing-thumbnail.png"
   },
   {
-    "path": "https://github.com/felipefialho/felipefialho.com",
+    "path": "/blog/metacx/",
     "date": "Mar. 2021",
     "title": "Master's Capstone Project: Research for B2B SaaS",
     "description": "Research Associate @ MetaCX",

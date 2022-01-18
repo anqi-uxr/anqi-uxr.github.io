@@ -5,6 +5,10 @@ const menuLinks = [
   },
   {
     label: 'Skills',
+    url: '/skills/'
+  },
+  {
+    label: 'Blog',
     url: '/blog/'
   },
   {
