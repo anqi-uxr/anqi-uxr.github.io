@@ -1,13 +1,10 @@
 {
-  "name": "felipefialho.com",
+  "name": "portfolio",
   "private": true,
-  "description": "My personal website and blog",
-  "version": "3.0.0",
-  "author": "Felipe Fialho <hi@felipefialho.com>",
-  "homepage": "https://github.com/felipefialho/felipefialho.com#readme",
-  "bugs": {
-    "url": "https://github.com/felipefialho/felipefialho.com/issues"
-  },
+  "description": "Anqi's Portfolio",
+  "version": "1.0.0",
+  "author": "Anqi Li <anqi.li.uxr@gmail.com>",
+  "homepage": "https://anqi-uxr.github.io/",
   "engines": {
     "node": ">=12.13.0"
   },
