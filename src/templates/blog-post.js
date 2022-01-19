@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
-import Content from 'components/Content'
+import PostContent from 'components/PostContent'
 
 import PostHeader from 'components/PostHeader'
 
@@ -27,9 +27,9 @@ const BlogPost = (props) => {
             description={post.frontmatter.description}
             timeToRead={post.timeToRead}
           />
-          <Content>
+          <PostContent>
             <div itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
-          </Content>
+          </PostContent>
         </div>
       </GridTemplate>
     </Layout>

@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 import * as V from 'styles/variables'
 import * as T from 'styles/typography'
 
-export const Content = styled.article`
+export const PostContent = styled.article`
   ${T.Text1}
 
   &:not(:first-child) {

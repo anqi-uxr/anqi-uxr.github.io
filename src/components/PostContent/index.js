@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const Content = ({ children }) => {
+const PostContent = ({ children }) => {
   return (
-    <S.Content>{ children }</S.Content>
+    <S.PostContent>{ children }</S.PostContent>
   )
 }
 
-Content.propTypes = {
+PostContent.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Content
+export default PostContent
