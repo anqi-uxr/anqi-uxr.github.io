@@ -37,7 +37,7 @@ const feeds = [
       }
     `,
     output: '/feed.xml',
-    title: 'Felipe Fialho - RSS Feed'
+    title: 'Anqi Li Feed'
   }
 ]
 

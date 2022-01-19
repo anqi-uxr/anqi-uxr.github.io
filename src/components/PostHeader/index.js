@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import DateTime from 'components/DateTime'
 import ButtonLink from 'components/ButtonLink'
-import * as R from 'components/Responsive'
+import MediaQuery from 'react-responsive'
 
 import * as S from './styled'
 
@@ -17,11 +17,11 @@ const PostHeader = ({
   return (
     <S.PostHeader>
       {image && (
-        <R.GreaterThanTablet>
+        <MediaQuery minWidth={768}>
           <div>
             <S.PostImage fluid={image.childImageSharp.fluid} />
           </div>
-        </R.GreaterThanTablet>
+        </MediaQuery>
       )}
       <S.ButtonBack>
         <ButtonLink rel="prev" to="/experience/">

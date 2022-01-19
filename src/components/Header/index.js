@@ -7,7 +7,6 @@ import { getActiveTheme } from 'utils/themes'
 import Menu from 'components/Menu'
 import Container from 'components/Container'
 import ToggleTheme from 'components/ToggleTheme'
-import * as R from 'components/Responsive'
 
 import * as S from './styled'
 
@@ -24,12 +23,7 @@ const Header = ({ site: { author } }) => {
             to="/"
             title="Home">
             <S.Brand>
-              <R.LessThanSmallMobile>
-                <S.Title>{author}</S.Title>
-              </R.LessThanSmallMobile>
-              <R.GreaterThanSmallMobile>
-                <S.Title>{author}</S.Title>
-              </R.GreaterThanSmallMobile>
+              <S.Title>{author}</S.Title>
             </S.Brand>
           </AniLink>
           <S.Menu>
