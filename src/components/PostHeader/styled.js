@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import * as V from 'styles/variables'
-import * as T from 'styles/typography'
 
 export const PostHeader = styled.header`
   &:not(:last-child) {
