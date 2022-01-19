@@ -173,14 +173,6 @@ const plugins = [
       icon: `content/assets/icon.png`,
     },
   },
-  `gatsby-plugin-netlify-cms`,
-  `gatsby-plugin-netlify`,
-  {
-    resolve: 'gatsby-plugin-netlify-cache',
-    options: {
-      cachePublic: true
-    }
-  },
 ]
 
 module.exports = {
