@@ -21,7 +21,7 @@ export const ButtonBack = styled.div`
 `
 
 export const PostImage = styled(Img).attrs({
-  alt: 'Imagem de introdução',
+  alt: 'Image',
   'aria-hidden': 'true'
 })`
   display: block;
