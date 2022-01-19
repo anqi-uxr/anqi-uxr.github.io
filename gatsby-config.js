@@ -164,8 +164,8 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Felipe Fialho`,
-      short_name: `felipefialho.com`,
+      name: `Anqi Li`,
+      short_name: `anqi-uxr.github.io`,
       start_url: `/`,
       background_color: `#fcfcfc`,
       theme_color: `#111111`,
@@ -188,8 +188,7 @@ module.exports = {
     title: `Anqi Li - UX Researcher`,
     author: `Anqi Li`,
     position: 'UX Researcher',
-    description: `Anqi's portfolio website.`,
-    descriptionEn: `Anqi's portfolio website.`,
+    description: `Anqi's portfolio.`,
     siteUrl: `https://anqi-uxr.github.io/`,
     social: {
       linkedinLink: `https://www.linkedin.com/in/anqi-li-uxr/`,

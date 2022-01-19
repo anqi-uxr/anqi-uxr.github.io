@@ -16,7 +16,6 @@ const BlogPost = (props) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image ? `https://felipefialho.com${post.frontmatter.image.publicURL}` : 'https://felipefialho.com/assets/og-image.jpg'}
       />
       <GridTemplate>
         <div itemScope itemType="http://schema.org/Article">
