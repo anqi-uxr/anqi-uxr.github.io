@@ -25,7 +25,7 @@ export const PostImage = styled(Img).attrs({
   'aria-hidden': 'true'
 })`
   display: block;
-  height: 25vh;
+  height: 50vh;
   left: calc(-50vw + 50%);
   margin-top: -${V.Height.mainTop};
   object-fit: cover;
