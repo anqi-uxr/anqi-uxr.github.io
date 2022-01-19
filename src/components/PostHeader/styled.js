@@ -51,7 +51,11 @@ export const PostImage = styled(Img).attrs({
 export const Title = styled.h1.attrs({
   "itemProp": "name"
 })`
-  ${T.Title}
+  & {
+    color: var(--primaryColor);
+    font-size: 4.4rem;
+    line-height: 1.1em;
+  }
 
   &:not(:first-child) {
     margin-top: ${V.Space.sm};
@@ -65,7 +69,12 @@ export const Title = styled.h1.attrs({
 export const Subtitle = styled.h2.attrs({
   "itemProp": "description"
 })`
-  ${T.Subtitle1}
+  & {
+    color: var(--secondaryColor);
+    font-size: 2.4rem;
+    letter-spacing: -0.45px;
+    line-height: 1.5em;
+  }
 
   &:not(:last-child) {
     margin-bottom: ${V.Space.default};

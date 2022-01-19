@@ -16,22 +16,32 @@ export const Content = styled.article`
   }
 
   h1 {
-    ${T.Heading1}
+    & {
+      font-size: 3.3rem;
+      font-weight: 700;
+      letter-spacing: -0.022em;
+      line-height: 1.3em;
+    }
 
     &:not(:first-child) {
       margin-top: ${V.Space.lg};
     }
 
     &:not(:last-child) {
-      margin-bottom: ${V.Space.default};
+      margin-bottom: ${V.Space.sm};
     }
   }
 
   h2 {
-    ${T.Heading1}
+    & {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.022em;
+      line-height: 1.3em;
+    }
 
     &:not(:first-child) {
-      margin-top: ${V.Space.lg};
+      margin-top: ${V.Space.md};
     }
 
     &:not(:last-child) {
@@ -40,7 +50,12 @@ export const Content = styled.article`
   }
 
   h3 {
-    ${T.Heading2}
+    & {
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: -0.022em;
+      line-height: 1.3em;
+    }
 
     &:not(:first-child) {
       margin-top: ${V.Space.md};
@@ -51,9 +66,61 @@ export const Content = styled.article`
     }
   }
 
-  p {
+  h4 {
+    & {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.022em;
+      line-height: 1.3em;
+    }
+
+    &:not(:first-child) {
+      margin-top: ${V.Space.md};
+    }
+
     &:not(:last-child) {
-      margin-bottom: ${V.Space.default};
+      margin-bottom: ${V.Space.sm};
+    }
+  }
+
+  h5 {
+    & {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.3em;
+      text-decoration: underline;
+    }
+
+    &:not(:first-child) {
+      margin-top: ${V.Space.sm};
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.sm};
+    }
+  }
+
+  h6 {
+    & {
+      font-size: 1.6rem;
+      line-height: 1.4em;
+      text-decoration: underline;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.sm};
+    }
+  }
+
+  p {
+    & {
+      font-size: 1.6rem;
+      line-height: 1.2em;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: ${V.Space.sm};
     }
   }
 
@@ -91,13 +158,18 @@ export const Content = styled.article`
     padding-left: 2.5rem;
 
     &:not(:last-child) {
-      margin-bottom: ${V.Space.default};
+      margin-bottom: ${V.Space.sm};
     }
   }
 
   li {
+    & {
+      font-size: 1.6rem;
+      line-height: 1.1em;
+    }
+
     &:not(:last-child) {
-      margin-bottom: ${V.Space.sm};
+      margin-bottom: ${V.Space.xxs};
     }
   }
 
