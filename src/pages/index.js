@@ -1,12 +1,12 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import { getActiveTheme } from 'utils/themes'
-
 import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
 import Content from 'components/Content'
+
+import * as V from 'styles/variables'
 
 const IndexPage = () => {
   return (
@@ -22,7 +22,7 @@ const IndexPage = () => {
             Check out my{' '}
             <AniLink
               cover
-              bg={getActiveTheme()}
+              bg={V.Color.whiteSolid}
               direction='down'
               duration={1}
               to='/experience/'

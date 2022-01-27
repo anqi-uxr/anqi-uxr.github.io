@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { getActiveTheme } from 'utils/themes'
-
 import * as S from './styled'
+import * as V from 'styles/variables'
 
 const ButtonLink = ({ children, to }) => {
   return (
@@ -12,7 +11,7 @@ const ButtonLink = ({ children, to }) => {
       cover
       direction="down"
       duration={1}
-      bg={getActiveTheme()}>
+      bg={V.Color.whiteSolid}>
       { children }
     </S.ButtonLink>
   )

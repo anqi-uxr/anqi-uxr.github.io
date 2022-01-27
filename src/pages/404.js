@@ -1,12 +1,12 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import { getActiveTheme } from 'utils/themes'
-
 import Layout from 'components/Layout'
 import Content from 'components/Content'
 import SEO from 'components/Seo'
 import GridTemplate from 'components/GridTemplate'
+
+import * as V from 'styles/variables'
 
 const NotFoundPage = () => {
   return (
@@ -20,7 +20,7 @@ const NotFoundPage = () => {
             In the meantime you can take a look at my{' '}
             <AniLink
               cover
-              bg={getActiveTheme()}
+              bg={V.Color.whiteSolid}
               direction='down'
               duration={1}
               to='/experience/'

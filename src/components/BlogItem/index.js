@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { getActiveTheme } from 'utils/themes'
 import DateTime from 'components/DateTime'
 import BoxHandler from 'components/BoxHandler'
 
 import * as S from './styled'
+import * as V from 'styles/variables'
 
 const BlogItem = ({
   slug,
@@ -22,7 +22,7 @@ const BlogItem = ({
       direction="down"
       duration={1}
       title={title}
-      bg={getActiveTheme()}>
+      bg={V.Color.whiteSolid}>
       <BoxHandler>
         {date && (
           <DateTime>
