@@ -1,7 +1,7 @@
 const menuLinks = [
   {
-    label: 'Experience',
-    url: '/experience/'
+    label: 'Work',
+    url: '/work/'
   }
 ]
 

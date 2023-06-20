@@ -30,7 +30,7 @@ const IndexPage = () => {
               bg={V.Color.whiteSolid}
               direction='down'
               duration={1}
-              to='/experience/'
+              to='/work/'
             >
               previous work
             </AniLink>

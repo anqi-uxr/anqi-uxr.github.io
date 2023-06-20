@@ -5,7 +5,7 @@ import Layout from 'components/Layout'
 import SEO from 'components/Seo'
 import Lab from 'components/Lab'
 
-const labJsonQuery = graphql`
+const workJsonQuery = graphql`
   query {
     allLabJson {
       edges {
@@ -24,15 +24,15 @@ const labJsonQuery = graphql`
   }
 `
 
-const LabPage = () => {
-  const data = useStaticQuery(labJsonQuery)
+const WorkPage = () => {
+  const data = useStaticQuery(workJsonQuery)
 
   return (
     <Layout>
-      <SEO title="Experience" />
+      <SEO title="Work" />
       <Lab content={data.allLabJson.edges} />
     </Layout>
   )
 }
 
-export default LabPage
+export default WorkPage
