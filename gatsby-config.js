@@ -183,7 +183,7 @@ module.exports = {
     description: `Anqi's portfolio.`,
     siteUrl: `https://anqi-uxr.github.io/`,
     social: {
-      linkedinLink: `https://www.linkedin.com/in/anqi-li-uxr/`,
+      linkedinLink: `https://www.linkedin.com/in/anqiliuxr/`,
     },
   },
   plugins
